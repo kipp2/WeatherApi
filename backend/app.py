@@ -12,4 +12,8 @@ def weather():
     if not city:
         return jsonify({'error': 'City parameter is required'}), 400
     
-    \
+    weather_info = get_weather_data(city)
+    return jsonify(weather_info)
+if __name__ == "__main__":
+    app.run(deb=True)
+
