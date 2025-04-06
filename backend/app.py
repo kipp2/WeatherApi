@@ -15,5 +15,5 @@ def weather():
     weather_info = get_weather_data(city)
     return jsonify(weather_info)
 if __name__ == "__main__":
-    app.run(deb=True)
+    app.run(debug=True)
 
